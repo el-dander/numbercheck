@@ -110,7 +110,7 @@ public class NumberReceiver extends BroadcastReceiver {
 			try {
 				String line;
 				if( nationalNumber.length() < 5 )
-					return null;
+					return new NumberDetails();
 				String search1 = "\"" + nationalNumber.substring(0,4) + "\"" + ",,";
 				String search2 = "\"" + nationalNumber.substring(0,4) + "\"" + ",\"" + nationalNumber.substring(4,5) + "\","; 
 				while((line = sabc.readLine()) != null) {
@@ -124,7 +124,7 @@ public class NumberReceiver extends BroadcastReceiver {
 						if( parts.length > 3 )
 							return new NumberDetails(context.getString(R.string.geographic_number, parts[3].replaceAll("\"", "")), is_safe);
 						else
-							return null;
+							return new NumberDetails();
 					}
 				}
 			} catch(IOException e) {}
@@ -144,7 +144,7 @@ public class NumberReceiver extends BroadcastReceiver {
 			try {
 				String line;
 				if( nationalNumber.length() < 6 )
-					return null;
+					return new NumberDetails();
 				String search1 = "\"" + nationalNumber.substring(0,4) + "\"" + ",\"" + nationalNumber.substring(4,5) + "\"";
 				String search2 = "\"" + nationalNumber.substring(0,4) + "\"" + ",\"" + nationalNumber.substring(4,6) + "\""; 
 				while((line = s7_code.readLine()) != null) {
@@ -152,9 +152,9 @@ public class NumberReceiver extends BroadcastReceiver {
 					{
 						String[] parts = line.split(",");
 						if( parts.length < 6 )
-							return null;
+							return new NumberDetails();
 						if( !parts[2].equals("\"Allocated\"") )
-							return null;
+							return new NumberDetails();
 						String operator = parts[4].replaceAll("\"", "");
 						String type = parts[5].replaceAll("\"", "");
 						boolean safe = false;
@@ -181,6 +181,6 @@ public class NumberReceiver extends BroadcastReceiver {
 			return new NumberDetails(context.getString(R.string.premium_rate), false);
 		}
 		
-		return null;
+		return new NumberDetails();
 	}
 }
