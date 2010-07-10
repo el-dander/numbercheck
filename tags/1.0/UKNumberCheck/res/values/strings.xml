@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="premium_rate">Premium Rate</string>
+	<string name="special_services">Special Services</string>
+	<string name="location_independent">Location Independent Electronic Communications Services</string>
+	<string name="corporate_numbering">Corporate Numbering</string>
+	<string name="freephone">Freephone</string>
+	<string name="nationwide_nongeographic">Nationwide non-geographic</string>
+	<string name="geographic_number">Geographic: %1$s</string>
+	<string name="international_number">International number</string>
+	<string name="directory_enq">Directory enquiries</string>
+	<string name="unknown_number">Unknown number</string>
+	<string name="prompt_text">Calling %1$s (%2$s) may cost more than you expect. Continue with call?</string>
+	<string name="no_string">No</string>
+	<string name="yes_string">Yes</string>
+	<string name="ok_string">Ok</string>
+	<string name="about_message">
+		Number Check is a simple app to give you information on the numbers
+		your phone is calling.\n\nFor further information, please visit
+		the homepage.\n\nCopyright (C) 2010 Laurence Anderson\n\nThis program is
+		distributed in the hope that it will be useful, but WITHOUT ANY
+		WARRANTY; without even the implied warranty of MERCHANTABILITY or
+		FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+		for more details.\n\nThe application icons are from Everaldo.com and
+		are distributed under LGPL.\n\nThe number tables are from
+		http://www.ofcom.org.uk/telecoms/ioi/numbers/numbers_administered/download
+	</string>
+	<string name="about_title">About</string>
+    <string name="ignore_unknown_string">Ignore unknown numbers</string>
+    <string name="about_string">About</string>
+    <string name="every_number_label">Info on every number</string> 
+    <string name="app_name">Number Check</string>
+</resources>

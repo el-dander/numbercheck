@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+<CheckBoxPreference android:title="@string/every_number_label" android:key="every_number"></CheckBoxPreference>
+
+<CheckBoxPreference android:title="@string/ignore_unknown_string" android:key="ignore_unknown"></CheckBoxPreference>
+
+
+
+<Preference android:title="@string/about_string" android:key="about"></Preference>
+
+</PreferenceScreen>
